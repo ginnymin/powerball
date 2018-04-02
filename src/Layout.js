@@ -38,7 +38,7 @@ export default class Layout extends React.Component {
                     <Selections selections={this.state.selections} powerball={this.state.powerball} show={this.togglePowerPicker} />
                 </View>
                 <View style={buttonStyles.container}>
-                    <TouchableHighlight style={submitStyles} onPress={() => { this.submit(); }} disabled={submitDisabled}><Text style={[buttonStyles.text, { color: 'white' }]}>SUBMIT</Text></TouchableHighlight>
+                    <TouchableHighlight style={submitStyles} onPress={() => { this.submit(); }} disabled={submitDisabled}><Text style={[buttonStyles.text, { color: 'white' }]}>SAVE TICKET</Text></TouchableHighlight>
                     <TouchableHighlight style={buttonStyles.clear} onPress={() => { this.clear(); }} underlayColor={"rgba(255,255,255,0)"}><Text style={[buttonStyles.text, { color: colors.red }]}>CLEAR</Text></TouchableHighlight>
                 </View>
                 <ScrollView contentContainerStyle={styles.pickerContainer}>
